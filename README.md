@@ -20,7 +20,7 @@ Command | Description | use
 </repositories>
 ```
 
-# Depency
+# Dependency
 ```xml
 <dependency>
         <groupId>com.github.angga7togk</groupId>
