@@ -1,0 +1,17 @@
+name: Coins
+main: angga7togk.coins.Coins
+version: 1.0.0
+api: 1.0.0
+author: Angga7Togk
+
+permissions:
+  setcoin.command:
+    default: op
+  addcoin.command:
+    default: op
+  reducecoin.command:
+    default: op
+  seecoin.command:
+    default: true
+  mycoin.command:
+    default: true
