@@ -1,4 +1,4 @@
-name: CoinsAPI
+name: Coins
 main: angga7togk.coins.Coins
 version: 1.0.0
 api: 1.0.0
