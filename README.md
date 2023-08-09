@@ -10,6 +10,25 @@ Command | Description | use
 `/seecoin` | See Coins Player | all
 `/mycoin` | Check My Coins | all
 
+# Repository
+```xml
+<repositories>
+        <repository>
+                <id>jitpack.io</id>
+                <url>https://jitpack.io</url>
+        </repository>
+</repositories>
+```
+
+# Depency
+```xml
+<dependency>
+        <groupId>com.github.angga7togk</groupId>
+        <artifactId>CoinsAPI-NK</artifactId>
+        <version>1.0.0</version>
+</dependency>
+```
+
 # For Developer
 ```java
 // get coins people or yourself
