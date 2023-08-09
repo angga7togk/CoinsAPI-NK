@@ -7,7 +7,6 @@ import cn.nukkit.utils.Config;
 import cn.nukkit.utils.TextFormat;
 
 public class Coins extends PluginBase {
-
     private static Coins instance;
     public Config data;
     public Config cfg;
