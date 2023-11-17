@@ -20,6 +20,9 @@ public class reduceCoins extends Command {
     }
 
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
+        if(!testPermission(sender)){
+            return false;
+        }
         if(Arrays.stream(args).count() < 2){
             sender.sendMessage(this.getUsage());
             return false;

@@ -18,6 +18,9 @@ public class myCoins extends Command {
 
     @Override
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
+        if(!testPermission(sender)){
+            return false;
+        }
         if(sender instanceof Player){
             if(this.plugin.data.exists(sender.getName().toLowerCase())){
                 sender.sendMessage(this.plugin.prefix + TextFormat.GREEN + this.plugin.data.getInt(sender.getName().toLowerCase()) + " Coins");

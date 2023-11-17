@@ -20,6 +20,9 @@ public class seeCoins extends Command {
     }
 
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
+        if(!testPermission(sender)){
+            return false;
+        }
         if(Arrays.stream(args).findAny().isEmpty()){
             sender.sendMessage(this.getUsage());
             return false;

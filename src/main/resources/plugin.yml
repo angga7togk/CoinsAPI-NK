@@ -1,8 +1,9 @@
 name: Coins
 main: angga7togk.coins.Coins
-version: 1.0.0
+version: 1.1.0
 api: 1.0.0
 author: Angga7Togk
+description: "Coins plugin for nukkit"
 
 permissions:
   setcoin.command:

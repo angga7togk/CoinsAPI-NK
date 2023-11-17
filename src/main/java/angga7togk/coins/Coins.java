@@ -16,11 +16,11 @@ public class Coins extends PluginBase {
     public void onEnable() {
         this.getServer().getPluginManager().registerEvents(new CoinsListener(this), this);
 
-        this.prefix = this.cfg.getString("prefix");
         this.saveResource("coins.yml");
         this.saveResource("config.yml");
         this.data = new Config(this.getDataFolder()+"/coins.yml", Config.YAML);
         this.cfg = new Config(this.getDataFolder()+"/config.yml", Config.YAML);
+        this.prefix = this.cfg.getString("prefix");
 
         this.getServer().getCommandMap().register("setcoins", new setCoins(this));
         this.getServer().getCommandMap().register("addcoins", new addCoins(this));
